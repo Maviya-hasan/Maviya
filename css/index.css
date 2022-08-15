@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+/* font-family: 'Silkscreen', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=Ubuntu:wght@300;400;500&display=swap');
+
+/* font-family: 'Ubuntu', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+
+/* body {
+    overflow-x: hidden;
+} */
+
+:root {
+    --main-bg: #181414;
+    --sec-bg: #FF5733;
+    --p-font: 'Roboto', sans-serif;
+    --n-font: 'Ubuntu', sans-serif;
+}
+
+.header {
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    position: relative;
+}
+
+#logo {
+    font-family: var(--n-font);
+    font-size: 2.5em;
+    margin: 5px 20px;
+    padding: 2px 20px;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+.c-span {
+    color: var(--sec-bg);
+}
+
+.navbar ul {
+    display: flex;
+    margin-right: 50px;
+}
+
+.navbar ul li {
+    margin: 0px 15px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-family: var(--n-font);
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navbar ul li a:hover {
+    background-color: var(--sec-bg);
+    transition: all 0.3s linear;
+}
+
+.icons {
+    display: none;
+}
+
+
+/* styling our home section  */
+
+#home {
+    background: rgb(43, 42, 42);
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+/* #home::before {
+    content: "";
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: url(../images/main-bg.jpg)center center/cover;
+    opacity: 0.9;
+} */
+
+#home .left {
+    /* border: 2px solid black; */
+    margin-right: 20px;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#home span .c-span {
+    color: var(--sec-bg);
+}
+
+#home .right {
+    margin-left: 60px;
+}
+
+#home .left h1,
+h3 {
+    color: white;
+    font-family: var(--n-font);
+    font-size: 28px;
+    padding-left: 50px;
+    margin: 5px -50px;
+}
+
+#home span {
+    color: white;
+    font-family: var(--n-font);
+    font-size: 50px;
+}
+
+#home .right img {
+    height: 200px;
+    border-radius: 200px;
+    border: 2px solid black;
+}
+
+
+/* Styling the instagram card */
+
+#insta {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #252020;
+}
+
+.heading {
+    padding: 10px 5px;
+    /* margin-top: -70px; */
+}
+
+#insta .heading span {
+    color: wheat;
+    font-family: var(--n-font);
+    font-size: 2rem;
+}
+
+#insta .heading .c-span {
+    color: var(--sec-bg);
+}
+
+.card {
+    height: 80vh;
+    /* border: 3px solid rgb(150, 150, 150); */
+    border-radius: 15px;
+    width: 30vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: var(--n-font);
+}
+
+
+/* .card:hover span, */
+
+.card:hover h1,
+.card:hover span,
+.card:hover h2 {
+    color: var(--sec-bg);
+    transition: all 0.5s linear;
+}
+
+.card:hover {
+    background-color: rgb(26, 21, 21);
+    color: var(--sec-bg);
+}
+
+.u-card img {
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid var(--sec-bg);
+    margin-top: 30px;
+}
+
+.l-card {
+    /* background-color: black; */
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: var(--n-font);
+    color: white;
+    justify-content: center;
+}
+
+.l-card .username {
+    margin: 5px 0px;
+}
+
+.l-card .row {
+    /* background: blue; */
+    padding: 10px 20px;
+    margin: 5px 0px;
+}
+
+.l-card .row .num span {
+    font-weight: bolder;
+    margin: 5px 30px;
+}
+
+.l-card .row .char span {
+    /* font-weight: bold; */
+    margin: 5px 10px;
+}
+
+#followers {
+    margin-left: 15px;
+}
+
+#v-btn {
+    padding: 10px 10px;
+    margin: 10px 20px;
+    font-family: var(--n-font);
+    font-size: 1.2rem;
+    width: 10rem;
+    font-weight: bold;
+    background-color: var(--sec-bg);
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#v-btn:hover {
+    background-color: var(--main-bg);
+    transition: all 0.5s linear;
+    /* border: 1px solid transparent; */
+}
+
+
+/* styling My about section  */
+
+#about {
+    height: 100vh;
+    background: rgb(43, 42, 42);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .heading {
+    margin-bottom: 20px;
+    color: white;
+}
+
+#about .heading span {
+    font-size: 2rem;
+    font-family: var(--n-font);
+}
+
+.container {
+    display: flex;
+    /* border: 2px solid red; */
+    background-color: var(--sec-bg);
+    border-radius: 10px;
+    height: 70%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container .photo {
+    /* margin-right: -210px; */
+    z-index: 23;
+}
+
+.container img {
+    height: 220px;
+    border-radius: 150px;
+    border: 3px solid rgb(78, 78, 78);
+}
+
+.container .info {
+    color: black;
+    /* background-color: white; */
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    /* width: 600px; */
+    border-radius: 20px 0px 0px 20px;
+}
+
+.container .info h2 {
+    font-family: var(--n-font);
+    margin-left: 5px 0px;
+    color: white;
+    /* margin-left: 125px; */
+}
+
+.container:hover h2 {
+    color: white;
+    transition: all 0.5s linear;
+}
+
+.container .info p {
+    font-family: var(--n-font);
+    color: white;
+    margin: 10px 1px;
+    /* margin-left: 125px; */
+}
+
+.container .info .stars {
+    margin: 10px 0px;
+    /* margin-left: 125px; */
+}
+
+
+/* Styling contact section  */
+
+#contact {
+    height: 100vh;
+    background-color: var(--main-bg);
+    display: flex;
+    flex-flow: column;
+}
+
+#contact span {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: white;
+    font-family: var(--n-font);
+    text-align: center;
+    margin-top: 35px;
+}
+
+#contact span span {
+    color: var(--sec-bg);
+}
+
+#contact .form {
+    display: flex;
+    flex-flow: column;
+}
+
+#contact .form h2 {
+    text-align: center;
+    color: white;
+    font-family: var(--n-font);
+    font-weight: lighter;
+    margin: 20px 0px;
+    margin-top: 0px;
+}
+
+#contact .form .form-inputs {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#contact .form .form-inputs {
+    display: flex;
+    flex-flow: column;
+}
+
+#contact .form .form-inputs input,
+textarea {
+    width: 70vw;
+    margin: 10px 0px;
+    padding: 10px 5px;
+    outline-color: var(--sec-bg);
+    border-radius: 10px;
+}
+
+#contact .form .form-inputs button {
+    width: 70vw;
+    padding: 10px 5px;
+    background-color: var(--sec-bg);
+    color: white;
+    font-family: var(--n-font);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    margin: 10px 0px;
+}
+
+#contact .form .form-inputs .sbtn:hover {
+    background-color: white;
+    color: var(--sec-bg);
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font-family: var(--n-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
